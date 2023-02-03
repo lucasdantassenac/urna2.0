@@ -71,10 +71,6 @@ const App = {
             Texts.setVoteContent(Stages.data[i])
             Render(".screen", Texts.voteContent)
             Stages.presentStep = 'selecting'
-            //TEST
-            Texts.setResultsContent(VotesCount.calculateResults(Candidates))
-            Render('#votationContent', Texts.resultsContent)
-            HideAndShowElements([popUpBk])
         })
         confirmBtn.addEventListener('click', () => {
             if((i) >= ( Stages.data.length - 1)) { 

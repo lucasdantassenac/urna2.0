@@ -28,6 +28,7 @@
     color:#222;
     overflow:scroll;
     z-index:999;
+    overflow-x:hidden;
 }
 #popUp .row{
     margin:1em 0;
@@ -43,6 +44,11 @@
     cursor:pointer;
     right:0;
 }
+.candidate{
+    margin:1em 0;
+    padding:0 0.5em;
+}
+
 .hidden{
     display:none;
     visibility:hidden;
@@ -280,7 +286,7 @@ footer{
 
 
 }
-@media (max-width:580px){
+@media (max-width:590px){
 
     body{
         padding:0.5em;
@@ -323,9 +329,21 @@ footer{
     #popUp{
         padding:1em;
     }
+    .closeButtonDiv{
+        width:74vw;
+    }
     #popUp .col{
         margin-bottom:1em;
         padding:1em 0;
         border-bottom:1px solid #222;
+    }
+    #popUp .col .candidate:nth-child(2n){
+        background-color:#ddd;
+    }
+    .candidate{
+        padding:0.5em;
+        font-size:22px;
+        margin:1em 0;
+        width:100%;
     }
 }
