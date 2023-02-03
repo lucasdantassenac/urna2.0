@@ -27,14 +27,22 @@
     padding:1em 2em;
     color:#222;
     overflow:scroll;
-    z-index:4;
+    z-index:999;
 }
 #popUp .row{
     margin:1em 0;
     padding:1em 0;
     border-bottom:1px solid #222;
 }
-
+.closeButtonDiv{
+    width:82vw;
+    position:fixed;
+    text-align:right;
+}
+#closePopUpBtn {
+    cursor:pointer;
+    right:0;
+}
 .hidden{
     display:none;
     visibility:hidden;
