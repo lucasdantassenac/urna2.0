@@ -120,12 +120,10 @@ const Texts = {
             </div>
         </div>
         <div class='row'>
-            <div class='col c50'>
+            <div class='col c100'>
                 <small>Votação para:</small>
                 <h2>Presidente</h2>
                 ${Texts.votes.president}
-            </div>
-            <div class='col'>
             </div>
         </div>
         `
