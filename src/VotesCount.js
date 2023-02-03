@@ -28,7 +28,6 @@ const VotesCount = {
                 </div>
             `
             }
-
             htmlCandidates.stateRepresentative.push(content)
         
         })
