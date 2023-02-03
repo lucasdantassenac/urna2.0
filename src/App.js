@@ -74,8 +74,6 @@ const App = {
         })
         confirmBtn.addEventListener('click', () => {
             if((i) >= ( Stages.data.length - 1)) { 
-                console.log(i)
-                console.log(Stages.data)
                 VotesCount.sumVote(selected, Stages[i] )
                 Stages.presentStep = 'endVotation'
                 HideAndShowElements([whiteBtn, eraseBtn, confirmBtn, voteAgainBtn, writeVotesBtn])
