@@ -242,6 +242,20 @@ footer{
         height:150px;
         object-fit:cover;
     }
+    #popUp .row{
+        flex-direction:column;
+        border:0px;
+        margin:0;
+        padding:0;
+    }
+    #popUp .col{
+        margin-bottom:1em;
+        padding:2em 0;
+        border-bottom:1px solid #222;
+    }
+    #popUp .c50{
+        width:100%;
+    }
 }
 @media(max-width: 700px){
     .screen{
