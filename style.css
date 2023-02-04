@@ -218,6 +218,14 @@ input[type=button]:not(.controls input){
 .confirm-btn{
     background-color:rgb(6, 151, 6);
 }
+.seeCandidatesArea{
+    margin-top:1em;
+}
+#seeCandidatesBtn{
+    color:black;
+    font-size:16px;
+    box-shadow: 2px 2px 7px #222;
+}
 
 /*footer area*/
 footer{

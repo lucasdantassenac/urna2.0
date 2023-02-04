@@ -53,7 +53,8 @@ const App = {
             seeResultsBtn = d('#seeResults'),
             popUpBk = d('#popUpBackground'),
             popUp = d('#popUp'),
-            closePopUpBtn = d('#closePopUpBtn');
+            closePopUpBtn = d('#closePopUpBtn'),
+            seeCandidatesBtn = d('#seeCandidatesBtn');
 
         whiteBtn.addEventListener('click', () => {
             if(Stages.presentStep == 'selected'){
@@ -119,6 +120,9 @@ const App = {
         closePopUpBtn.addEventListener('click', () => {
             HideAndShowElements([popUpBk])
 
+        })
+        seeCandidatesBtn.addEventListener('click', () => {
+            HideAndShowElements([popUpBk])
         })
     },
     restart: (i) => {
