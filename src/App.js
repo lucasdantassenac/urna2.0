@@ -91,7 +91,6 @@ const App = {
                 Render('.error-area', Errors.beforeChoseCandidate)
             }
         })
-
         voteAgainBtn.addEventListener('click', () => {
             i = 0
             App.restart(i)
@@ -122,6 +121,8 @@ const App = {
 
         })
         seeCandidatesBtn.addEventListener('click', () => {
+            Texts.setAllCandidatesContent(Candidates)
+            Render('#votationContent', Texts.allCandidatesContent)
             HideAndShowElements([popUpBk])
         })
     },
