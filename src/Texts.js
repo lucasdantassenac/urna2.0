@@ -106,15 +106,19 @@ const Texts = {
             content.forEach(candidate => {
                 if(candidate.type != "nullVote" && candidate.type != "whiteVote") {
                     Texts.allCandidatesContent.congressman += 
-                        `<div class='candidate-info'>
+                    `<div class='row'>
+                        <div class='c50 candidate-image'>
                             <img src='${candidate.photoUrl}' alt='Imagem do candidato'>
+                        </div>
+                        <div class='candidate-info c50'>
                             <small>Nome:</small>
                             <span>${candidate.name}</span>
                             <small>Partido:</small>
                             <span>${candidate.party}</span>
                             <small>Número:</small>
                             <span>${candidate.number}</span>
-                        </div>`
+                        </div>
+                    </div>` 
                 }
             });   
         } else{
@@ -129,15 +133,19 @@ const Texts = {
             content.forEach(candidate => {
                 if(candidate.type != "nullVote" && candidate.type != "whiteVote") {
                     Texts.allCandidatesContent.senator += 
-                        `<div class='candidate-info'>
+                    `<div class='row'>
+                        <div class='c50 candidate-image'>
                             <img src='${candidate.photoUrl}' alt='Imagem do candidato'>
+                        </div>
+                        <div class='candidate-info c50'>
                             <small>Nome:</small>
                             <span>${candidate.name}</span>
                             <small>Partido:</small>
                             <span>${candidate.party}</span>
                             <small>Número:</small>
                             <span>${candidate.number}</span>
-                        </div>`
+                        </div>
+                    </div>` 
                 }
             });   
         } else{
@@ -152,15 +160,19 @@ const Texts = {
             content.forEach(candidate => {
                 if(candidate.type != "nullVote" && candidate.type != "whiteVote") {
                     Texts.allCandidatesContent.governor += 
-                        `<div class='candidate-info'>
+                    `<div class='row'>
+                        <div class='c50 candidate-image'>
                             <img src='${candidate.photoUrl}' alt='Imagem do candidato'>
+                        </div>
+                        <div class='candidate-info c50'>
                             <small>Nome:</small>
                             <span>${candidate.name}</span>
                             <small>Partido:</small>
                             <span>${candidate.party}</span>
                             <small>Número:</small>
                             <span>${candidate.number}</span>
-                        </div>`
+                        </div>
+                    </div>` 
                 }
             });   
         } else{
@@ -175,15 +187,19 @@ const Texts = {
             content.forEach(candidate => {
                 if(candidate.type != "nullVote" && candidate.type != "whiteVote") {
                     Texts.allCandidatesContent.president += 
-                        `<div class='candidate-info'>
+                    `<div class='row'>
+                        <div class='c50 candidate-image'>
                             <img src='${candidate.photoUrl}' alt='Imagem do candidato'>
+                        </div>
+                        <div class='candidate-info c50'>
                             <small>Nome:</small>
                             <span>${candidate.name}</span>
                             <small>Partido:</small>
                             <span>${candidate.party}</span>
                             <small>Número:</small>
                             <span>${candidate.number}</span>
-                        </div>`
+                        </div>
+                    </div>` 
                 } else {
                     Texts.allCandidatesContent.president += 
                         `<div class='candidate-info'>
