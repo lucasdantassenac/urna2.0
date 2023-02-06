@@ -114,7 +114,7 @@ const App = {
         })
         seeResultsBtn.addEventListener('click', () => {
             Render('#votationContent', Texts.resultsContent)   
-            HideAndShowElements([popUpBk, writeVotesBtn, voteAgainBtn, newVotationBtn, seeResultsBtn])
+            HideAndShowElements([popUpBk])
 
         })
         closePopUpBtn.addEventListener('click', () => {
