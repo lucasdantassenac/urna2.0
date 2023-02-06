@@ -113,8 +113,9 @@ const App = {
             HideAndShowElements([whiteBtn, eraseBtn, confirmBtn, newVotationBtn, seeResultsBtn])
         })
         seeResultsBtn.addEventListener('click', () => {
-            HideAndShowElements([popUpBk])
-            
+            Render('#votationContent', Texts.resultsContent)   
+            HideAndShowElements([popUpBk, writeVotesBtn, voteAgainBtn, newVotationBtn, seeResultsBtn])
+
         })
         closePopUpBtn.addEventListener('click', () => {
             HideAndShowElements([popUpBk])
@@ -122,8 +123,8 @@ const App = {
         })
         seeCandidatesBtn.addEventListener('click', () => {
             Texts.setAllCandidatesContent(Candidates)
-            Render('#votationContent', Texts.allCandidatesContent)
             HideAndShowElements([popUpBk])
+            Render('#votationContent', Texts.allCandidatesContent)
         })
     },
     restart: (i) => {

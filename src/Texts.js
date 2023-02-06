@@ -215,6 +215,13 @@ const Texts = {
         }
     },
     setResultsContent: content => {
+        Texts.votes = {
+            stateRepresentative: "",
+            congressman:"",
+            senator:"",
+            governor:"",
+            president:""
+        }
         Texts.setStateRepresentativeContent(content)
         Texts.setCongressman(content)
         Texts.setSenator(content)
@@ -255,6 +262,13 @@ const Texts = {
         `
     },
     setAllCandidatesContent: content => {
+        Texts.allCandidatesContent= {
+            stateRepresentative: "",
+            congressman:"",
+            senator:"",
+            governor:"",
+            president:""
+        }
         Texts.setStateRepresentativeContent(content, true)
         Texts.setCongressman(content, true)
         Texts.setSenator(content, true)
